@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    height: 100%;
+}
+
+.boards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10vw;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.can-shoot:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+.board-cell.hit {
+    background-color: rgb(197, 255, 214);
+}
+
+.board-cell.miss {
+    background-color: rgb(255, 193, 193);
+}
+
+.board-cell {
+    width: 3vw;
+    height: 3vw;
+    border: solid black 1px;
+    margin: 2px;
+}
